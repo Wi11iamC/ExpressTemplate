@@ -10,6 +10,12 @@ router.get("/", (req, res) => {
   });
 });
 
+router.post("/", (req, res) => {
+
+  res.json({message: "Success!"})
+
+})
+
 router.use("/sticker", sticker);
 
 module.exports = router;
